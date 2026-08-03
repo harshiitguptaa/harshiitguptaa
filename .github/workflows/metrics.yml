@@ -1,0 +1,32 @@
+name: Generate Metrics Dashboard
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # runs every 12 hours
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  metrics:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # --- Theme (dark + terminal green) ---
+          config_timezone: Asia/Kolkata
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_limit: 8
+          plugin_lines: yes
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
