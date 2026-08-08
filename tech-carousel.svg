@@ -1,0 +1,102 @@
+<svg width="760" height="140" viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#061109"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <clipPath id="frameClip">
+      <rect x="16" y="4" width="728" height="132" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <rect x="2" y="2" width="756" height="136" rx="14" fill="url(#bgGrad3)" stroke="#39FF14" stroke-width="1.4">
+    <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <g clip-path="url(#frameClip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-810,0" dur="18s" repeatCount="indefinite"/>
+      <g transform="translate(425,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.0056;0.0556;0.1056;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=java" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(-385,70)">
+        <image href="https://skillicons.dev/icons?i=java" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(515,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.1167;0.1667;0.2167;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=spring" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(-295,70)">
+        <image href="https://skillicons.dev/icons?i=spring" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(605,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.2278;0.2778;0.3278;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=linux" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(-205,70)">
+        <image href="https://skillicons.dev/icons?i=linux" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(695,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.3389;0.3889;0.4389;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=git" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(-115,70)">
+        <image href="https://skillicons.dev/icons?i=git" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(785,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.45;0.5;0.55;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=github" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(-25,70)">
+        <image href="https://skillicons.dev/icons?i=github" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(875,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.5611;0.6111;0.6611;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=bash" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(65,70)">
+        <image href="https://skillicons.dev/icons?i=bash" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(965,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.6722;0.7222;0.7722;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=docker" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(155,70)">
+        <image href="https://skillicons.dev/icons?i=docker" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(1055,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.7833;0.8333;0.8833;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=mysql" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(245,70)">
+        <image href="https://skillicons.dev/icons?i=mysql" x="-24" y="-24" width="48" height="48"/>
+      </g>
+      <g transform="translate(1145,70)">
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="1;1.15;1.5;1.15;1" keyTimes="0;0.8944;0.9444;0.9944;1" dur="18s" repeatCount="indefinite"/>
+          <image href="https://skillicons.dev/icons?i=python" x="-24" y="-24" width="48" height="48"/>
+        </g>
+      </g>
+      <g transform="translate(335,70)">
+        <image href="https://skillicons.dev/icons?i=python" x="-24" y="-24" width="48" height="48"/>
+      </g>
+    </g>
+  </g>
+</svg>
