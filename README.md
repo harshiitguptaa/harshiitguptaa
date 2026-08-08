@@ -26,7 +26,7 @@
 
 <!-- Animated bar chart, bars fill in on load -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/harshiitguptaa/harshiitguptaa/main/skills_chart.svg" alt="skill levels" width="700"/>
+  <img src="https://raw.githubusercontent.com/harshiitguptaa/harshiitguptaa/main/skill_chart.svg" alt="skill levels" width="700"/>
 </p>
 
 ---
