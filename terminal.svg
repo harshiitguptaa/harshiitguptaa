@@ -26,35 +26,94 @@
   <circle cx="62" cy="17" r="6" fill="#27c93f"/>
   <text x="350" y="21" fill="#6b8f74" font-family="Consolas, Menlo, monospace" font-size="12" text-anchor="middle">harshit@security-terminal:~</text>
 
-  <!-- scanline sweep -->
-  <rect x="2" y="32" width="696" height="4" fill="#39FF14" opacity="0.08">
-    <animate attributeName="y" values="32;200;32" dur="4s" repeatCount="indefinite"/>
+  <!-- scanline sweep, continuous -->
+  <rect x="2" y="34" width="696" height="4" fill="#39FF14" opacity="0.08">
+    <animate attributeName="y" values="34;200;34" dur="4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- terminal lines -->
-  <g font-family="Fira Code, Consolas, monospace" font-size="15" fill="#39FF14" filter="url(#glow)">
-    <text x="24" y="62" opacity="0">$ whoami
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
+  <!-- progress counter, cycles with the screens -->
+  <g font-family="Consolas, monospace" font-size="11">
+    <text x="670" y="21" text-anchor="end" fill="#4d8a5c" opacity="0">
+      [1/4]
+      <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;1" keyTimes="0;0.2083;0.2208;0.4583;0.4708;0.7083;0.7208;0.9583;1" dur="24s" repeatCount="indefinite"/>
     </text>
-    <text x="24" y="88" opacity="0">&gt; harshit_gupta — aspiring appsec &amp; cloud security engineer
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.1s" fill="freeze"/>
+    <text x="670" y="21" text-anchor="end" fill="#4d8a5c" opacity="0">
+      [2/4]
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2208;0.2625;0.4583;0.4708;1" dur="24s" repeatCount="indefinite"/>
     </text>
-    <text x="24" y="114" opacity="0">$ nmap -sV --top-ports 20 skills
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.2s" fill="freeze"/>
+    <text x="670" y="21" text-anchor="end" fill="#4d8a5c" opacity="0">
+      [3/4]
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4708;0.5125;0.7083;0.7208;1" dur="24s" repeatCount="indefinite"/>
     </text>
-    <text x="24" y="140" opacity="0">PORT   STATE  SERVICE   Java | Spring Boot | Linux | Git
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.1s" fill="freeze"/>
-    </text>
-    <text x="24" y="166" opacity="0">$ cat philosophy.txt
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.2s" fill="freeze"/>
-    </text>
-    <text x="24" y="192" opacity="0">"Breaking things to learn how to protect them."
-      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="5s" fill="freeze"/>
+    <text x="670" y="21" text-anchor="end" fill="#4d8a5c" opacity="0">
+      [4/4]
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7208;0.7625;0.9583;0.9708;1" dur="24s" repeatCount="indefinite"/>
     </text>
   </g>
 
-  <!-- blinking cursor -->
-  <rect x="24" y="200" width="10" height="16" fill="#39FF14" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" dur="1s" begin="5.6s" repeatCount="indefinite"/>
+  <!-- ===================== SCREEN 1: whoami ===================== -->
+  <g font-family="Fira Code, Consolas, monospace" font-size="15" fill="#39FF14" filter="url(#glow)">
+    <text x="24" y="66" opacity="0">$ whoami
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0125;0.0167;0.2083;0.2208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="94" opacity="0">&gt; harshit_gupta — aspiring appsec &amp; cloud security engineer
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.025;0.0292;0.2083;0.2208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="122" opacity="0">$ id
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0375;0.0417;0.2083;0.2208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="150" opacity="0">uid=1000(harshit) groups=(appsec,cloud-sec,linux)
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.05;0.0542;0.2083;0.2208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ===================== SCREEN 2: nmap ===================== -->
+  <g font-family="Fira Code, Consolas, monospace" font-size="15" fill="#39FF14" filter="url(#glow)">
+    <text x="24" y="66" opacity="0">$ nmap -sV -p- target.local
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2625;0.2667;0.4583;0.4708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="94" opacity="0">22/tcp   open   ssh      OpenSSH 9.4
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.275;0.2792;0.4583;0.4708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="122" opacity="0">443/tcp  open   https    nginx 1.25
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2875;0.2917;0.4583;0.4708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="150" opacity="0">Scan complete: 2 open ports found
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3;0.3042;0.4583;0.4708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ===================== SCREEN 3: gobuster ===================== -->
+  <g font-family="Fira Code, Consolas, monospace" font-size="15" fill="#39FF14" filter="url(#glow)">
+    <text x="24" y="66" opacity="0">$ gobuster dir -u https://target.local -w wordlist.txt
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5125;0.5167;0.7083;0.7208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="94" opacity="0">/admin        (Status: 200)
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.525;0.5292;0.7083;0.7208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="122" opacity="0">/api/v1       (Status: 200)
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5375;0.5417;0.7083;0.7208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="150" opacity="0">/backup.zip   (Status: 403) [!]
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.55;0.5542;0.7083;0.7208;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ===================== SCREEN 4: philosophy ===================== -->
+  <g font-family="Fira Code, Consolas, monospace" font-size="15" fill="#39FF14" filter="url(#glow)">
+    <text x="24" y="66" opacity="0">$ cat philosophy.txt
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7625;0.7667;0.9583;0.9708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="98" opacity="0" font-size="17">"Breaking things to learn
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.775;0.7792;0.9583;0.9708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+    <text x="24" y="126" opacity="0" font-size="17">how to protect them."
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7875;0.7917;0.9583;0.9708;1" dur="24s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- blinking cursor, always active -->
+  <rect x="24" y="200" width="10" height="16" fill="#39FF14">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
   </rect>
 </svg>
