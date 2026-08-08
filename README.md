@@ -14,24 +14,6 @@
 
 ---
 
-### 🛠️ Tech & Tools
-
-<!-- Animated coverflow: icons scroll continuously, center icon scales up -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/harshiitguptaa/harshiitguptaa/main/tech-carousel.svg" alt="tech carousel" width="760"/>
-</p>
-
----
-
-### 📊 Skills
-
-<!-- Animated tag list, cascades in on load -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/harshiitguptaa/harshiitguptaa/main/skills-badges.svg" alt="skills" width="700"/>
-</p>
-
----
-
 ### 🔎 About Me
 
 - 🛡️ Hands-on with **pentesting tools** — Nmap, Wireshark, Burp Suite, Metasploit — practicing against lab environments regularly
