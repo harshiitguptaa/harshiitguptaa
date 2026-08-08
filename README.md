@@ -23,11 +23,11 @@
 
 ---
 
-### 📊 Skill Levels
+### 📊 Skills
 
-<!-- Animated bar chart, bars fill in on load -->
+<!-- Animated tag list, cascades in on load -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/harshiitguptaa/harshiitguptaa/main/skills-chart.svg" alt="skill levels" width="700"/>
+  <img src="https://raw.githubusercontent.com/harshiitguptaa/harshiitguptaa/main/skills-badges.svg" alt="skills" width="700"/>
 </p>
 
 ---
